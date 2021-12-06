@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body{
+      background: hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+    } 
+
+ 
+.card
+{
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  background:  hsl(216, 50%, 16%);
+flex-direction: column;
+width: 240px;
+padding: 15px;
+border-radius: 10px;
+box-shadow:  1px 1px 30px 5px rgba(255, 5, 5, 0.452);
+}
+
+.line
+{
+  height: 2px;
+  background: hsl(215, 32%, 27%);
+  margin: 8px 0 ;
+}
+
+.details{
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar_img
+{
+  border: 2px white solid;
+  border-radius: 100%; 
+
+ 
+}
+.spare{
+  display: flex;
+  align-items: center;
+
+}
+
+
+.detail_paragraph
+{
+  font-size: 13px;
+margin: 20px 0;
+}
+.container_detals .either
+{
+ color:  hsl(178, 100%, 50%);
+ margin-left: 5px;
+}
+.container_detals {
+  display: flex;
+  
+  
+}
+.container_detals span{
+  margin-left: 5px;
+}
+
+.type
+{
+  margin: 15px 0 0 0;
+  color:hsl(0, 0%, 100%);
+}
+.main_img{
+ position: relative;
+ border-radius: 10px;
+ width: 240px;
+ height: 240px;
+}
+.hero_img{
+  position: absolute;
+}
+.iconimg{
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  background:hsla(178, 100%, 50%, 0.425) ;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+display: none;
+}
+.main_img:hover  .iconimg{
+display: flex;
+cursor: pointer;
+
+}
+
+.name{
+ 
+  color:hsl(0, 0%, 100%);
+}
+
+.creation_name{
+  font-size: 14px;
+  margin-left: 14px;
+}
+
+.type:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
+  </style>
+</head>
+
+
+
+<body>
+<div class="card">
+  <div class= "main_img" > 
+    <div class="hero_img">
+      <img src="image-equilibrium.jpg" alt="" width="240" height="240">
+    </div>  
+      <div class="iconimg">
+        <img src="images/icon-view.svg" class="hoverImg" alt="Eye icon">
+      </div>
+     </div>
+  <span class="type"> Equilibrium #3429</span>
+ 
+<span class="detail_paragraph">Our Equilibrium collection promotes balance and calm.</span>
+<div class="details">
+ <div class="container_detals">
+  <img src="icon-ethereum.svg" alt=""><span class="either" > 0.041 ETH</span></div> 
+ <div class="container_detals"> <img  src="icon-clock.svg" alt=""><span > 3 days left</span></div>
+</div>
+  
+
+  <div class="line"></div>
+  <div class="spare"><img class="avatar_img" src="image-avatar.png" alt="" width="30" height="30" >
+    <span class="creation_name" > Creation of <span class="name">Jules Wyvern</span></span></div>
+  
+ 
+</div>
+ 
+
+
+</body>
+</html>
